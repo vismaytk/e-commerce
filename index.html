@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: flex;
+            justify-content: center;
+        }
+        .child{
+            margin-top: 8%;
+            width: 500px;
+            height: 550px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        .child1 form{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="child">
+            <div class="child1">
+                <form action="/" method="post">
+                    <label for="action">Choose Action</label>
+                    <select id="action" name="action">
+                        <option value="add">Add</option>
+                        <option value="delete">Delete</option>
+                        <option value="update">Update</option>
+                        <option value="display">Display</option>
+                    </select> <br><br>
+
+                    <label for="PID">Product ID</label>
+                    <input type="text" id="PID" name="ProductID"> <br>
+
+                    <label for="PN">Product Name</label> 
+                    <input type="text" id="PN" name="ProductName"> <br>
+
+                    <label for="Rating1">Rating 1</label>
+                    <input type="text" id="Rating1" name="Rating1"> Enter Value Between 10-50 <br> <br>
+
+                    <label for="Rating2">Rating 2</label>
+                    <input type="text" id="Rating2" name="Rating2"> Enter Value Between 10-50 <br> <br>
+
+                    <label for="Rating3">Rating 3</label>
+                    <input type="text" id="Rating3" name="Rating3"> Enter Value Between 10-50 <br> <br>
+              
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
